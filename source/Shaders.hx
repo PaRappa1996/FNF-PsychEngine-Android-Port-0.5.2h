@@ -1083,7 +1083,7 @@ class PulseEffect extends Effect
     public var waveSpeed(default, set):Float = 0;
 	public var waveFrequency(default, set):Float = 0;
 	public var waveAmplitude(default, set):Float = 0;
-    public var Enabled(default, set):Bool = false;
+    //public var Enabled(default, set):Bool = false;
 
 	public function new(waveSpeed:Float,waveFrequency:Float,waveAmplitude:Float):Void
 	{
@@ -1109,7 +1109,8 @@ class PulseEffect extends Effect
         return v;
     }
 
-    /*function set_Enabled(v:Bool):Bool
+    /*
+	function set_Enabled(v:Bool):Bool
     {
         Enabled = v;
         shader.uEnabled.value = [Enabled];
