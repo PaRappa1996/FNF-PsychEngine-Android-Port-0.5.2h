@@ -1091,8 +1091,8 @@ class PulseEffect extends Effect
 		this.waveFrequency = waveFrequency;
 		this.waveAmplitude = waveAmplitude;
 		shader.uTime.value = [0];
-        shader.uampmul.value = [0];
-        shader.uEnabled.value = [false];
+        shader.uampmul.value = [1];
+        //shader.uEnabled.value = [false];
 		PlayState.instance.shaderUpdates.push(update);
 	}
 
@@ -1109,12 +1109,12 @@ class PulseEffect extends Effect
         return v;
     }
 
-    function set_Enabled(v:Bool):Bool
+    /*function set_Enabled(v:Bool):Bool
     {
         Enabled = v;
         shader.uEnabled.value = [Enabled];
         return v;
-    }
+    }*/
     
     function set_waveFrequency(v:Float):Float
     {
